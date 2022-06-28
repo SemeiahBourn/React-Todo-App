@@ -1,10 +1,11 @@
 const TodosItem = (props)=>{
-    const {chore, date, description}=props.todos
+    const {Chore, Date, Description}=props.todos
+    console.log(props)
     return(
         <div>
-            <h3>{chore}</h3>
-            <h2>{date}</h2>
-            <h1>{description}</h1>
+            <h3>{Chore}</h3>
+            <h2>{Date}</h2>
+            <h1>{Description}</h1>
         </div>
     )
 }

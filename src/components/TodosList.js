@@ -6,8 +6,7 @@ const TodosList = (props) => {
     <div>
       <h2>todos</h2>
 
-      {/* Here we map over the array */}
-      {/* {props.todos.map((item,idx) => <TodosItem todos={item} key={idx} /> )} */}
+      {props.todos.map((item,idx) => <TodosItem todos={item} key={idx} /> )} 
     </div>
   );
 };

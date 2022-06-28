@@ -3,7 +3,6 @@ import todoData from "./data/todoData";
 import { Component } from "react";
 import Navbar from "./components/Navbar";
 import TodosList from "./components/TodosList";
-console.log(todoData);
 class App extends Component {
   state = {
     todoData: todoData,
@@ -18,9 +17,9 @@ class App extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const newTodo = {
-      chore: this.state.todoChore,
-      date: this.state.todoDate,
-      description: this.state.todoDescription,
+      Chore:this.state.todoChore,
+      Date:this.state.todoDate,
+      Description:this.state.todoDescription,
     };
     console.log(newTodo);
     this.setState({
@@ -61,7 +60,7 @@ class App extends Component {
           <input type="submit" />
         </form>
 
-        <TodosList todo={this.state.todoData} />
+        <TodosList todos={this.state.todoData} />
       </div>
     );
   }
